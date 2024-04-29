@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "PressStart2P-regular";
+  src: url("fonts/PressStart2P-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Ownglyph_Dailyokja-Rg";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2403@1.0/Ownglyph_Dailyokja-Rg.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: antiquewhite;
+  font-family: "PressStart2P-regular";
+}
+
+h1 {
+  font-family: PressStart2P-regular;
+  text-align: center;
+}
+
+.result {
+  background-color: rgb(116, 74, 192);
+  width: 320px;
+  height: 80px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 12px;
+}
+
+.calculator {
+  background-color: rgb(250, 192, 116);
+  display: flex;
+  flex-direction: column;
+  height: 800px;
+  align-items: center; /* 교차축에대한 정렬 */
+  /*justify-content: center;  진행방향에 대한 정렬*/
+}
+
+.calculator-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 320px;
+}
+
+button {
+  width: 80px;
+  height: 80px;
+  font-family: "PressStart2P-Regular";
+  background-color: rgb(203, 155, 247);
+}
+
+button:hover {
+  background-color: rgb(165, 86, 239);
+}

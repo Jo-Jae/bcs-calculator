@@ -6,6 +6,7 @@
 // test2El.innerHTML = "Javascript";
 
 let result = 0;
+let operator = "";
 
 const resultEl = document.querySelector(".result");
 
@@ -21,4 +22,44 @@ function onClickNumber(number) {
   }
 
   console.log(resultEl.innerHTML.length);
+}
+
+// function onClickOperator() {
+//   result = +resultEl.innerHTML;
+
+//   resultEl.innerHTML = 0;
+
+//   operator = "+";
+// }
+
+// function onClickMinus() {
+//   result = +resultEl.innerHTML;
+
+//   resultEl.innerHTML = 0;
+
+//   operator = "-";
+// }
+
+// function onClickMul() {
+//   result = +resultEl.innerHTML;
+
+//   resultEl.innerHTML = 0;
+
+//   operator = "*";
+// }
+
+// function onClickDiv() {
+//   result = +resultEl.innerHTML;
+
+//   resultEl.innerHTML = 0;
+
+//   operator = "/";
+// }
+
+function onClickOperator(inputOperator) {
+  result = +resultEl.innerHTML;
+
+  resultEl.innerHTML = 0;
+
+  operator = inputOperator;
 }
